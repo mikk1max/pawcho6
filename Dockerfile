@@ -49,4 +49,4 @@ ARG VERSION
 RUN echo "Wersja aplikacji: $VERSION" >> /usr/share/nginx/html/index.html
 
 # Dodanie HEALTHCHECK
-HEALTHCHECK --interval=10s --timeout=1s CMD curl -f http://localhost:8080/ || exit 1
+HEALTHCHECK --interval=10s --timeout=3s CMD curl -f http://localhost:8080/ || exit 1
